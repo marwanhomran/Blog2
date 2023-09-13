@@ -49,12 +49,12 @@ section{
 /* Header */
 
 header{
-    position: fixed;
+    background-color: var(--container-color);
     top: 0;
     left: 0;
     width: 100%;
     z-index: 200;
-    border-radius: 10px;
+    
 }
 
 .nav{
@@ -74,17 +74,27 @@ header{
     color: var(--second-color);
 }
 
-.login{
+.login, .sign-up{
     padding: 8px 14px;
-    text-transform: uppercase;
     font-weight: 50;
     border-radius: 4px;
     background: var(--second-color);
     color: var(--bg-color);
 }
 
-.login:hover{
+.login:hover, .sign-up:hover{
     background: hsl(24, 98%, 58%);
+    transition: 0.3s;
+}
+
+.nav-links {
+    color: var(--second-color);
+    margin-left: 10px;
+}
+
+.nav-links:hover {
+    border-bottom: 1px solid;
+    color:  hsl(24, 98%, 58%);
     transition: 0.3s;
 }
 
@@ -108,6 +118,7 @@ header{
     font-size: 3.5rem;
 
 }
+
 .home-subtitle{
     font-size: 1rem;
     font-weight: 400;
@@ -126,6 +137,12 @@ header{
     font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
+}
+
+.filter-item:hover {
+    border-bottom: 1px solid;
+    color:  hsl(24, 98%, 58%);
+    transition: 0.3s;
 }
 
 .active-filter{
