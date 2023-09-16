@@ -20,7 +20,7 @@
 }
 ::selection{
     color: var(--bg-color);
-    background: var(--second-color);
+    background: var(--container-color);
 }
 a{
     text-decoration: none;
@@ -75,6 +75,7 @@ header{
 }
 
 .login, .sign-up{
+    display: inline;
     padding: 8px 14px;
     font-weight: 50;
     border-radius: 4px;
@@ -102,7 +103,7 @@ header{
 .home{
     width: 100%;
     min-height: 440px;
-    background: var(--container-color);
+    background: var(--second-color);
     display: grid;
     justify-content: center;
     align-items: center;

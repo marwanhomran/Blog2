@@ -3,75 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Page</title>
+    <title>Login Page</title>
 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sign-login-style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-
-     <!-- Bootstrap -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
-    <div class="container mt-2">
-        <h1 class="text-center text-capitalize text-info">Marwan Blog Sign-Up Page</h1>
-        <hr>
-        <section class="vh-100">
-            <div class="container-fluid h-custom">
-              <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-md-9 col-lg-6 col-xl-5">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                    class="img-fluid" alt="Sample image">
-                </div>
-                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                  <form>
-                    <!-- First Name input -->
-                    <div class="form-outline mb-4">
-                      <label class="form-label" for="f-name">First Name</label>
-                      <input type="text" id="f-name" class="form-control form-control-lg"
-                        placeholder="First Name" />
-                      
-                    </div>
 
-                     <!-- Last Name input -->
-                     <div class="form-outline mb-4">
-                      <label class="form-label" for="l-name">Last Name</label>
-                        <input type="text" id="l-name" class="form-control form-control-lg"
-                          placeholder="Last Name" />
-                        
-                      </div>
-  
-
-                    <!-- Email input -->
-                    <div class="form-outline mb-4">
-                      <label class="form-label" for="email">Email address</label>
-                        <input type="email" id="email" class="form-control form-control-lg"
-                          placeholder="Enter Your Email" />
-                        
-                      </div>
-          
-                    <!-- Password input -->
-                    <div class="form-outline mb-3">
-                      <label class="form-label" for="password">Password</label>
-                      <input type="password" id="password" class="form-control form-control-lg"
-                        placeholder="Enter password"/>
-                        
-                      
-                      
-                    </div>
-          
-                    <div class="text-center text-lg-start mt-4 pt-2">
-                      <button type="button" class="btn btn-primary btn-lg"
-                        style="padding-left: 2.5rem; padding-right: 2.5rem;">Register</button>
-                    </div>
-          
-                  </form>
-                </div>
-              </div>
+    <!-- header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <div>
+                <!-- logo -->
+                <a href="index.html" class="logo"><span>Marwan</span></a>
             </div>
-          </section>
+            <div>
+                <a href="index.html" class="nav-links">Home</a>
+                <a href="#" class="nav-links">Services</a>
+                <a href="#" class="nav-links">About Us</a>
+            </div>
+            <div>
+            <!-- login button -->
+            <a href="loginPage.html" class="login" id="login">Login</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <!-- login Form -->
+      <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form>
+            <div class="input-group">
+              <div class="input-field" id="nameField">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Name">
+              </div>
+              
+
+
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="btn-field">
+                <button type="button">
+                    <a href="loginPage.html">Sign Up</a>
+                </button>
+            </div> 
+        </form>
     </div>
+    </section>
+    <script src="js/main.js"></script>
 </body>
 </html>
